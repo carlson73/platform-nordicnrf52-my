@@ -1,0 +1,46 @@
+{
+  "build": {
+    "arduino":{
+      "ldscript": "nrf52810_xxaa.ld"
+    },
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DARDUINO_nRF52810 -DNRF52810_XXAA",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52810",
+    "variant": "nRF52810"
+    },
+  "connectivity": [
+    "bluetooth"
+  ],
+  "debug": {
+    "default_tools": [
+      "jlink"
+    ],
+    "jlink_device": "nRF52810_xxAA",
+    "onboard_tools": [
+      "cmsis-dap",
+      "jlink"
+    ],
+    "svd_path": "nrf52810.svd"
+  },
+  "frameworks": [
+    "arduino"
+   ],
+  "name": "nRF52810",
+  "upload": {
+    "maximum_ram_size": 65536,
+    "maximum_size": 196608,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "nrfjprog",
+      "stlink",
+      "blackmagic",
+      "cmsis-dap",
+      "mbed"
+    ]
+  },
+  "url": "https://developer.mbed.org/platforms/Nordic-nRF52-DK/",
+  "vendor": "Nordic"
+}
